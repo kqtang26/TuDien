@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Từ điển Anh-Việt</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="speech_prompt">Nói đi nào!</string>
+    <string name="speech_not_supported">Xin lỗi! Chức năng không hỗ trợ trên thiết bị này</string>
+    <string name="tap_on_mic">Chạm vào mic để nói</string>
+</resources>

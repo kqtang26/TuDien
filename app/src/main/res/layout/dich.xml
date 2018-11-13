@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.millionaire.tudien.Activity.Main"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Tiếng Anh"
+            android:gravity="center"
+            android:id="@+id/textViewSource"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_left"
+            android:layout_marginLeft="5dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/switch_button"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnSwitch"
+            android:layout_marginRight="30dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Tiếng Việt"
+            android:gravity="center"
+            android:id="@+id/textViewTarget"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_right"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+        <EditText
+            android:id="@+id/InputText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint=""
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="1000"
+            android:gravity="top"
+            android:maxLines="10" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/TranslateButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Dịch"
+        />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/OutputText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="1000"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="top"
+            android:padding="10dp"
+            android:maxLines="10" />
+    </LinearLayout>
+
+</LinearLayout>
+
