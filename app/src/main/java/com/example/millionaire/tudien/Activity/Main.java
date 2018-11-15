@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Handler;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -62,7 +63,6 @@ public class Main extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
 
         database = openOrCreateDatabase(DATABASE_NAME,MODE_PRIVATE,null);
-
         AddTuVung();
         addControls();
 
